@@ -1,4 +1,6 @@
 @import "input";
+@import "phone-input";
+@import "thanks-section";
 
 .App {
   height: 1133px;
@@ -75,8 +77,6 @@ select {
   box-sizing: border-box;
   border-radius: 3px;
   appearance: none;
-
-
 }
 
 .flag-select {
@@ -107,6 +107,7 @@ select {
 }
 
 .button-submit {
+  border: none;
   width: 250px;
   height: 42px;
   background: #14E298;
@@ -116,6 +117,30 @@ select {
   letter-spacing: 0.0125em;
   color: #FFFFFF;
   margin-top: 6px;
+}
+
+.button-submit:hover {
+  background: #23F7AB;
+}
+
+.helper {
+  width: 225px;
+  height: 16px;
+  background: #F0175C;
+  border-radius: 0px 0px 4px 4px;
+  padding: 6px 0 4px 15px;
+  margin: -32px 0 16px 0;
+  z-index: 40;
+  .helper-text {
+    width: 141px;
+    height: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    align-items: center;
+    letter-spacing: 0.0125em;
+    color: #FFFFFF;
+  }
 }
 
 footer {
@@ -175,12 +200,12 @@ footer {
     text-align: center;
     width: 335px;
     height: 40px;
-    margin: 20px 0 57px 0;
+    margin: 10px 0 60px 0;
   }
 
   .voxus-form {
     width: 335px;
-    height: 600px;
+    height: 570px;
     padding-top: 30px;
     box-shadow: 0px 4px 40px rgba(116, 130, 150, 0.2);
     border-radius: 3px;
@@ -205,7 +230,7 @@ footer {
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.0125em;
-    color: rgba(45, 58, 64, 0.3);
+    color: white;
   }
 
   .phone {
@@ -257,19 +282,20 @@ footer {
     font-size: 16px;
     letter-spacing: 0.0125em;
     color: #FFFFFF;
+    margin-top: -7px;
   }
 
   footer {
-    margin: 0px 0px 40px 0px;
+    margin: 0;
     padding-top: 20px;
-    padding-left: 22px;
+    padding-left: 1-px;
     .footer-section {
       width: 335px;
       flex-direction: column;
       align-items: flex-start !important;
     }
     .logo-footer {
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
     .link-footer {
       margin-left: 0;
